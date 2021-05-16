@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function App() {
+function ex1() {
   const [count, setCount] = useState(0);
   function onClick() {
     setCount(prev => prev + 1);
   }
-  console.log('render');
   return (
     <div>
       <h2>{count}</h2>
@@ -14,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default ex1;
