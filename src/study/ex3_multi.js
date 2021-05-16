@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function App() {
+function ex3_multi() {
   const [state, setState] = useState({ name: '', age: 0 });
   return (
     <div>
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default ex3_multi;
