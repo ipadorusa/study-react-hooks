@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import Profile from './study/ex5_useEffect';
+import React, { useState } from 'react';
+import Profile from './Profile';
+import Clock from './study/Clock';
+import WidthPrinter from './study/WidthPrinter';
 
 function App() {
-  const [userId, setUserId] = useState(0);
+  const [count, setCount] = useState(0);
   return (
     <div>
-      <Profile userId={userId} />
-      <button type='button' onClick={() => setUserId(userId + 1)}>
-        userId 변경
+      <Profile />
+      <Clock />
+      <div>{count === 0 && <WidthPrinter />}</div>
+      <button type='button' onClick={() => setCount(prev => prev + 1)}>
+        증가
       </button>
     </div>
   );
 }
-
-export default App;
