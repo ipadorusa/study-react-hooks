@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Profile from './study/ex5_useEffect';
 
 function App() {
-  const [state, setState] = useState({ name: '', age: 0 });
+  const [userId, setUserId] = useState(0);
   return (
     <div>
-      <p>{`name is ${state.name}`}</p>
-      <p>{`age is ${state.age}`}</p>
-      <input type='text' value={state.name} onChange={e => setState({ ...state, name: e.target.value })} />
-      <input type='text' value={state.age} onChange={e => setState({ ...state, age: e.target.value })} />
+      <Profile userId={userId} />
+      <button type='button' onClick={() => setUserId(userId + 1)}>
+        userId 변경
+      </button>
     </div>
   );
 }
