@@ -1,12 +1,11 @@
 import React from 'react';
-import Calculator from './Calculator';
-import TodoWrap from './components/TodoWrap';
+
+import SelectFruit from './SelectFruit';
 
 function App() {
   return (
     <div>
-      <Calculator />
-      <TodoWrap />
+      <SelectFruit />
     </div>
   );
 }
