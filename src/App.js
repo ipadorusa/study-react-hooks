@@ -1,13 +1,15 @@
 import React from 'react';
+import InputSample from './study/useRef/InputSample';
 
-import SelectFruit from './SelectFruit';
+
 
 function App() {
   return (
     <div>
-      <SelectFruit />
+      <InputSample />
     </div>
   );
 }
 
 export default App;
+
