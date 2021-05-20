@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SelectFruit from './SelectFruit';
+import Repeat2 from './Repeat_again';
 
 function App() {
   return (
     <div>
-      <SelectFruit />
+      <Repeat2 />
     </div>
   );
 }
