@@ -1,11 +1,10 @@
 import React from 'react';
-
-import Repeat2 from './Repeat_again';
+import InputSample from './study/useRef/InputSample';
 
 function App() {
   return (
     <div>
-      <Repeat2 />
+      <InputSample />
     </div>
   );
 }
