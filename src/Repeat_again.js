@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function Repeat2() {
-  const [flag, setFlag] = useState(true);
+  const [flag, setFlag] = useState(true)
   useEffect(() => {
     setTimeout(() => {
-      setFlag(prev => !prev);
-    }, 1000);
-  });
-  const fruits = flag ? FRUITS_1 : FRUITS_2;
+      setFlag((prev) => !prev)
+    }, 1000)
+  })
+  const fruits = flag ? FRUITS_1 : FRUITS_2
   return (
     <div>
       {fruits.map((item, idx) => (
@@ -17,13 +17,13 @@ function Repeat2() {
          */
       ))}
     </div>
-  );
+  )
 }
 
-export default Repeat2;
+export default Repeat2
 
-const FRUITS_1 = ['바나나', '오렌지'];
-const FRUITS_2 = ['바나나', '바나나', '오렌지'];
+const FRUITS_1 = ['바나나', '오렌지']
+const FRUITS_2 = ['바나나', '바나나', '오렌지']
 
 /**
  * 행복이 중간에 왔을경우 react 는 다음 요소까지 같이 변경 된지 알고 새롭게 렌더링함

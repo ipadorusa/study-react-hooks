@@ -1,8 +1,8 @@
-import React from 'react';
-import useUser from './useUser';
+import React from 'react'
+import useUser from './useUser'
 
 function Profile({ userId }) {
-  const user = useUser(userId);
+  const user = useUser(userId)
   return (
     <div>
       {!user && <p>사용자 정보를 가져오는 중...</p>}
@@ -13,7 +13,7 @@ function Profile({ userId }) {
         </>
       )}
     </div>
-  );
+  )
 }
 
-export default Profile;
+export default Profile

@@ -1,5 +1,5 @@
-import React from 'react';
-import TodoList from './TodoList';
+import React from 'react'
+import TodoList from './TodoList'
 
 function TodoWrap() {
   return (
@@ -7,7 +7,7 @@ function TodoWrap() {
       <h2>TodoList</h2>
       <TodoList />
     </div>
-  );
+  )
 }
 
-export default TodoWrap;
+export default TodoWrap
